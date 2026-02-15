@@ -12,7 +12,6 @@ namespace APIVerve.API.UsernameProfanity
     {
         /// <summary>
         /// The username to check if it is inappropriate or profane
-        /// Example: b00bs
         /// </summary>
         [JsonProperty("username")]
         public string Username { get; set; }
