@@ -217,8 +217,9 @@ from apiverve_usernameprofanity.apiClient import UsernameprofanityAPIClient
 
 api = UsernameprofanityAPIClient("[YOUR_API_KEY]")
 
+query = { "username": "b00bs" }
+
 try:
-    query = { "username": "b00bs" }
     result = api.execute(query)
     print(result)
 finally:
