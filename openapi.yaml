@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Username Profanity
   description: >-
-    Username Profanity Checker is a simple tool for checking if a username is
-    inappropriate or profane. It returns if the username is inappropriate or
-    profane.
+    Username Profanity flags offensive or inappropriate usernames before they
+    reach your database. Send any candidate handle to receive a clear true or
+    false profanity check result.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/usernameprofanity:
     get:
-      summary: Check Username
+      summary: Username Profanity
       description: Check if a username is inappropriate or profane
       operationId: usernameprofanity
       parameters:
