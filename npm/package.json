@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/usernameprofanity",
-  "version": "1.2.0",
-  "description": "Username Profanity Checker is a simple tool for checking if a username is inappropriate or profane. It returns if the username is inappropriate or profane.",
+  "version": "1.2.2",
+  "description": "Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "username profanity checker", "username profanity checker api", "username profanity checker tool", "username profanity checker software", "username profanity checker service"
+    "username profanity api", "username validation api", "username filter api", "check username profanity", "profanity filter for usernames"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/usernameprofanity-api/issues"
   },
-  "homepage": "https://usernameprofanity.apiverve.com?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/usernameprofanity?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
