@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-usernameprofanity"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result."
+description = "Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result; paid plans add the matched words and categories, reserved-name and contact-detail checks, a masked version of the username and a single allowed verdict."
 keywords = ["username profanity api", "username validation api", "username filter api", "check username profanity", "profanity filter for usernames"]
 readme = "README.md"
 requires-python = ">=3.9"

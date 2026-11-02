@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='apiverve_usernameprofanity',
-    version='1.2.3',
+    version='1.2.4',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'requests',
         'setuptools'
     ],
-    description='Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result.',
+    description='Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result; paid plans add the matched words and categories, reserved-name and contact-detail checks, a masked version of the username and a single allowed verdict.',
     author='APIVerve',
     author_email='hello@apiverve.com',
     url='https://apiverve.com/marketplace/usernameprofanity?utm_source=pypi&utm_medium=referral&utm_content=homepage',
