@@ -1,7 +1,7 @@
 Username Profanity API
 ============
 
-Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result.
+Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result; paid plans add the matched words and categories, reserved-name and contact-detail checks, a masked version of the username and a single allowed verdict.
 
 
 [![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.UsernameProfanity.svg)](https://www.nuget.org/packages/APIVerve.API.UsernameProfanity)
@@ -367,7 +367,18 @@ using (var apiClient = new UsernameProfanityAPIClient("[YOUR_API_KEY]"))
   "error": null,
   "data": {
     "username": "b00bs",
-    "isProfane": true
+    "isProfane": true,
+    "matchedWords": [
+      "boob"
+    ],
+    "categories": [
+      "sexual"
+    ],
+    "isReserved": false,
+    "reservedTerm": null,
+    "contactInfo": [],
+    "censored": "b***s",
+    "isAllowed": false
   }
 }
 ```

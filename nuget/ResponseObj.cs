@@ -37,6 +37,27 @@ namespace APIVerve.API.UsernameProfanity
 
         [JsonProperty("isProfane")]
         public bool? IsProfane { get; set; }
+
+        [JsonProperty("matchedWords")]
+        public string[] MatchedWords { get; set; }
+
+        [JsonProperty("categories")]
+        public string[] Categories { get; set; }
+
+        [JsonProperty("isReserved")]
+        public bool? IsReserved { get; set; }
+
+        [JsonProperty("reservedTerm")]
+        public object ReservedTerm { get; set; }
+
+        [JsonProperty("contactInfo")]
+        public object[] ContactInfo { get; set; }
+
+        [JsonProperty("censored")]
+        public string Censored { get; set; }
+
+        [JsonProperty("isAllowed")]
+        public bool? IsAllowed { get; set; }
     }
 
     public partial class Premium
