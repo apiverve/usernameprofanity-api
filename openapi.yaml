@@ -4,7 +4,9 @@ info:
   description: >-
     Username Profanity flags offensive or inappropriate usernames before they
     reach your database. Send any candidate handle to receive a clear true or
-    false profanity check result.
+    false profanity check result; paid plans add the matched words and
+    categories, reserved-name and contact-detail checks, a masked version of the
+    username and a single allowed verdict.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -53,6 +55,15 @@ paths:
                 data:
                   username: b00bs
                   isProfane: true
+                  matchedWords:
+                    - boob
+                  categories:
+                    - sexual
+                  isReserved: false
+                  reservedTerm: null
+                  contactInfo: []
+                  censored: b***s
+                  isAllowed: false
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

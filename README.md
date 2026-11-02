@@ -1,6 +1,6 @@
 # [Username Profanity API](https://apiverve.com/marketplace/usernameprofanity?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result.
+Username Profanity flags offensive or inappropriate usernames before they reach your database. Send any candidate handle to receive a clear true or false profanity check result; paid plans add the matched words and categories, reserved-name and contact-detail checks, a masked version of the username and a single allowed verdict.
 
 The Username Profanity API provides a simple, reliable way to integrate username profanity functionality into your applications. Built for developers who need production-ready username profanity capabilities without the complexity of building from scratch.
 
@@ -212,7 +212,18 @@ A real response from the Username Profanity API:
   "error": null,
   "data": {
     "username": "b00bs",
-    "isProfane": true
+    "isProfane": true,
+    "matchedWords": [
+      "boob"
+    ],
+    "categories": [
+      "sexual"
+    ],
+    "isReserved": false,
+    "reservedTerm": null,
+    "contactInfo": [],
+    "censored": "b***s",
+    "isAllowed": false
   }
 }
 ```
