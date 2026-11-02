@@ -25,8 +25,15 @@ declare module '@apiverve/usernameprofanity' {
 
 
   interface UsernameProfanityData {
-      username:  null | string;
-      isProfane: boolean | null;
+      username:     null | string;
+      isProfane:    boolean | null;
+      matchedWords: (null | string)[];
+      categories:   (null | string)[];
+      isReserved:   boolean | null;
+      reservedTerm: null;
+      contactInfo:  any[];
+      censored:     null | string;
+      isAllowed:    boolean | null;
   }
 
   export default class usernameprofanityWrapper {
